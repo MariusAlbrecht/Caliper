@@ -9,6 +9,9 @@ set(CALIPER_CXX_EXAMPLE_APPS
   cali-memtracking-macros
   cali-perfproblem-branch-mispred
   cali-regionprofile)
+if (CALIPER_HAVE_LIBPFM)
+  list(APPEND CALIPER_CXX_EXAMPLE_APPS sample_callback_example)
+endif()
 set(CALIPER_MPI_EXAMPLE_APPS
   collective-output-channel)
 set(CALIPER_C_EXAMPLE_APPS
