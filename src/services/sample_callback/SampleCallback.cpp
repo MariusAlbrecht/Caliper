@@ -15,7 +15,7 @@
 
 #include "caliper/common/Attribute.h"
 #include "caliper/common/Log.h"
-#include "caliper/common/RuntimeConfig.h"
+#include "../common/RuntimeConfig.h"
 
 #include <atomic>
 
