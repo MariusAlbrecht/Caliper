@@ -36,9 +36,11 @@ class Caliper(CachedCMakePackage, CudaPackage, ROCmPackage):
     license("BSD-3-Clause")
 
     # Fork branch built on top of LLNL/Caliper releases/v2.14.0.
+    # The sample_callback work is pushed directly onto releases/v2.14.0
+    # on the fork, not a separate feature branch.
     version(
         "2.14.0-sample-callback",
-        branch="sample-callback-v2.14.0",
+        branch="releases/v2.14.0",
         preferred=True,
     )
 
